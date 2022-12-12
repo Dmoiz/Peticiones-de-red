@@ -15,11 +15,9 @@ class DataImage : UIImageView {
        func loadImageFromData(from url: URL) {
           getImageData(from: url) {
              data, response, error in
-             guard let data = data, error == nil else {
-                return
-             }
-             DispatchQueue.main.async() {
-                self.image = UIImage(data: data)
+             guard let data = data, error == nil else { return }
+             DispatchQueue.main.async() { [weak self] in
+                self?.image = UIImage(data: data)
              }
           }
        }
