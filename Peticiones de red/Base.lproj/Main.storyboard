@@ -1,24 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Peticiones_de_red" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S28-wF-jTh" customClass="DataImage" customModule="Peticiones_de_red" customModuleProvider="target">
+                                <rect key="frame" x="96.666666666666686" y="77" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="OVM-wW-7gd"/>
+                                    <constraint firstAttribute="width" constant="200" id="hp0-kw-cSt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nk0-Ij-6cX" customClass="URLsessionImage" customModule="Peticiones_de_red" customModuleProvider="target">
+                                <rect key="frame" x="96.666666666666686" y="326" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="0gs-vl-R9b"/>
+                                    <constraint firstAttribute="width" constant="200" id="kex-XP-Y1f"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uqe-3j-eiI" customClass="AlamoImage" customModule="Peticiones_de_red" customModuleProvider="target">
+                                <rect key="frame" x="96.666666666666686" y="584" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Z1l-Dv-VIC"/>
+                                    <constraint firstAttribute="width" constant="200" id="o8E-Ej-k06"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="URLsession" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tbd-BK-MGh">
+                                <rect key="frame" x="151.66666666666666" y="539" width="90" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alamo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kel-UO-V6T">
+                                <rect key="frame" x="172.66666666666666" y="797" width="48" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ko2-Yv-9FE">
+                                <rect key="frame" x="178.66666666666666" y="285" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="S28-wF-jTh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-249" id="85P-hB-7kc"/>
+                            <constraint firstItem="S28-wF-jTh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Byr-Np-Pu6"/>
+                            <constraint firstItem="ko2-Yv-9FE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CMv-te-PQh"/>
+                            <constraint firstItem="Tbd-BK-MGh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="E1a-yG-14J"/>
+                            <constraint firstItem="kel-UO-V6T" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="381.5" id="Ffx-tx-C69"/>
+                            <constraint firstItem="nk0-Ij-6cX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L0o-2i-K9U"/>
+                            <constraint firstItem="ko2-Yv-9FE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-130.5" id="Pox-NS-awM"/>
+                            <constraint firstItem="kel-UO-V6T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ujs-uX-4B8"/>
+                            <constraint firstItem="uqe-3j-eiI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bCw-gE-t6O"/>
+                            <constraint firstItem="uqe-3j-eiI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="258" id="lBk-Fb-isE"/>
+                            <constraint firstItem="Tbd-BK-MGh" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="123.5" id="nOe-iV-zPV"/>
+                            <constraint firstItem="nk0-Ij-6cX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rrv-p2-IhD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ivAlamo" destination="uqe-3j-eiI" id="snB-fN-uyW"/>
+                        <outlet property="ivData" destination="S28-wF-jTh" id="zwm-Dx-ozW"/>
+                        <outlet property="ivUrlSession" destination="nk0-Ij-6cX" id="1W7-w3-ElN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="166" y="-4"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
